@@ -1,0 +1,15 @@
+---
+application:
+  name: "impfbot"
+  project: "Impfbot"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "Impf "
+  version: "12"
+routers:
+- name: "main-impfbot"
+  routes:
+  - application_name: "impfbot"
+    paths:
+    - "/*"
